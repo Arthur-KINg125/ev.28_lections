@@ -85,8 +85,19 @@
 #     return x + z
 
 # print(add(2, 5))
-# 
-def get_type(arg1, arg2):
-    print(f'{type(arg1)}\n{type(arg2)}')
+# # 
+# def get_type(arg1, arg2):
+#     print(f'{type(arg1)}\n{type(arg2)}')
 
-get_type(5, '5')
+# get_type(5, '5')
+
+
+
+# try:
+#     num1 = int(input('Vvedite chislo: '))
+#     num2 = int(input('Vvedite chislo: '))
+#     res = num1 + num2
+# except ValueError:
+#     print('Введите число!')
+# else: 
+#     print(res)
