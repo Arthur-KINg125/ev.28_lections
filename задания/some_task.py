@@ -101,3 +101,33 @@
 #     print('Введите число!')
 # else: 
 #     print(res)
+
+# try:
+#     inp1 = int(input('Vvedite: '))
+#     inp2 = int(input('Vvedite: '))
+#     res = inp1 + inp2
+# except ValueError:
+#     # if inp1 or inp2 != int():
+#     res = inp1 + inp2
+# else:
+#     print(res)
+
+# try:
+#     inp1 = input('Vvedite: ')
+#     inp2 = input('Vvedite: ')
+#     print(int(inp1) + int(inp2))
+# except:
+#     print(inp1 + inp2)
+
+# dict_ = {'key1': 'value1', 'key2': 'value2'}
+# try:
+#     print(dict_['fark'])
+# except KeyError:
+#     print('Нет такого ключа!')
+
+# list_ = [1, 4, 9, 16, 25, 36] 
+# try:
+#     print(list_[11])
+# except:
+#     print('Нет такого элемента!')
+
