@@ -131,3 +131,59 @@
 # except:
 #     print('Нет такого элемента!')
 
+# suitcase = []
+# suitcase.append('shoes')
+# suitcase.append('t-shirt')
+# suitcase.append('glasses')
+# suitcase.append('phone')
+# suitcase.append('cream')
+# suitcase.remove('shoes')
+# suitcase.insert(0, 'crocs')
+# print(suitcase)
+
+# nums = [1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89]
+# res = []
+# for x in nums:
+#     if x < 5:
+#         res.append(x)
+
+# print(res)
+
+# def func11(list_, tuple_):
+#     return print(list_, tuple_)
+
+# func11([1, 2, 3, 4], (1, 2, 3, 4))
+
+# list_ = list(input('Vvedite list: '))
+# tuple_ = tuple(input('Vvedite tuple: '))
+# print(list_, tuple_)
+
+# list_ = input('Vvedite chisla: ').split(' ')
+# tuple_ = tuple(list_)
+# print(list_)
+# print(tuple_)
+
+# list_ = [1, 2, 3, 4]
+# new_list = []
+# for x in list_:
+#     new_list.append(str(x))
+
+# print(new_list)
+
+# for i in range(1, 10):
+#     i -= 5
+# print(i)
+
+# for i in range(9, 4, -3):
+#     print(i)
+
+# try:
+#     age = int(input('Vvedite chislo: '))
+#     if age < 18:    
+#         raise ValueError('Доступ запрещен')
+# except ValueError:
+#     print('Введён некорректный возраст')
+# else:
+#     print('Спасибо')
+# finally:
+#     print('До свидания!')
