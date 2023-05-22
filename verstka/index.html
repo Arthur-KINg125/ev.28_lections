@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moon</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">Moon</a>
+        <ul>
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Makers</a></li>
+            <li><a href="#">COntact</a></li>
+        </ul>
+    </header>
+    <section>
+        <img src="media/stars.png" id="stars">
+        <img src="media/moon.png" id="moon">
+        <img src="media/mountains_behind.png" id="behind">
+        <h2 id="text">Moon Light</h2>
+        <a href="#" id="btn">Explore</a>
+        <img src="media/mountains_front.png" id="front">
+    </section>
+    <div class="sec" id="sec">
+        <h2>Scrolling Effects</h2>
+        <p><br><br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa quaerat, totam harum quo commodi error consequatur non eius aut? Ducimus minima aperiam quia amet laboriosam placeat natus vero iusto obcaecati.<br><br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa quaerat, totam harum quo commodi error consequatur non eius aut? Ducimus minima aperiam quia amet laboriosam placeat natus vero iusto obcaecati.<br><br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa quaerat, totam harum quo commodi error consequatur non eius aut? Ducimus minima aperiam quia amet laboriosam placeat natus vero iusto obcaecati.<br><br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa quaerat, totam harum quo commodi error consequatur non eius aut? Ducimus minima aperiam quia amet laboriosam placeat natus vero iusto obcaecati.</p>
+
+    </div>
+    <script>
+        let stars = document.getElementById('stars')
+        let moon = document.getElementById('moon')
+        let mount_behind = document.getElementById('behind')
+        let text = document.getElementById('text')
+        let btn = document.getElementById('btn')
+        let mount_front = document.getElementById('front')
+        let header = document.querySelector('header')
+
+        window.addEventListener('scroll', function(){
+            let value = window.scrollY
+            stars.style.left = value * 0.25 + 'px'
+            moon.style.top = value * 1.05 + 'px'
+            mount_behind.style.top = value * 0.5 + 'px'
+            mount_front.style.yop = value *0.4 + 'px'
+            text.style.marginRight = value * 4 + 'px'
+            text.style.marginTop = value * 1.5 + 'px'
+            btn.style.marginTop =value * 1.5 + 'px'
+            header.style.top = value * 0.5 + 'px'
+        })
+    </script>
+</body>
+</html>
+

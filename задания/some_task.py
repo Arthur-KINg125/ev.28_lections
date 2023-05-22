@@ -187,3 +187,202 @@
 #     print('Спасибо')
 # finally:
 #     print('До свидания!')
+
+# def func12(list_, low_up):
+#     if low_up == 'lower':
+#         return [x.lower() for x in list_]
+#     elif low_up == 'upper':
+#         return [x.upper() for x in list_]
+    
+# print(func12(['STRING1', 'STRING2'], 'upper'))
+
+# def func13(string):
+#     return [lambda x:string.count(x) for x in string]
+
+# print(func13('Hello'))
+
+# num1 = 88
+# num2 = 84
+# res = int()
+# i = 0
+# flag = False
+# while i != num2:
+#     i += 1
+#     res = num1 * num1
+#     print(num1 * res)
+    
+# num1 = 88
+# num2 = 84
+# i = 0
+# while i != num2:
+#     i += 1
+#     print(num1 ** num1)
+        
+# class Song:
+#     def __init__(self, author, title, year):
+#         self.author = author
+#         self.title = title
+#         self.year = year
+        
+#     def show_author(self):
+#         return(f'Автор этой песни {self.author}')
+        
+#     def show_title(self):
+#         return(f'Название этой песни {self.title}')
+
+#     def show_year(self):
+#         return(f'Эта песня вышла в {self.year} году')
+
+        
+# Song_ = Song(title = 'Yomi Yori', author = 'ICDD', year = 2014)
+
+# print(Song_.title)
+# print(Song_.author)
+# print(Song_.year)
+
+# with open('task3.txt', 'w+') as file:
+#     file.write('0*1*2*3*4*5*6*7*8*9*')
+#     file.seek(0)
+#     print(file.read())
+
+# class Class1:
+#     def first(self):
+#         pass
+
+#     def second(self):
+#         pass
+
+# class Class2(Class1):
+#     def third(self):
+#         pass
+
+#     def fourth(self):
+#         pass
+
+# obj = Class2()
+# obj.first()
+# obj.second()
+# obj.third()
+# obj.fourth()
+
+# class A:
+#     def public(self):
+#         return 'public method'
+
+#     def _protected(self):
+#         return 'Protected method'
+
+#     def __private(self):
+#         return 'Private method'
+
+#     def print_protected(self):
+#         self._protected()
+
+#     def print_private(self):
+#         self.__private
+
+# obj1 = A()
+
+# print(obj1.public())
+# print(obj1.print_protected()) 
+# print(obj1.print_private())
+
+# class A:
+#     def method1(self):
+#         print('Hello World')
+    
+# class B(A):
+#     pass
+
+# b1 = B()
+# b1.method1()
+
+
+# class Car:
+#     __speed = 0 
+#     def set_speed(self, meaning): 
+#         self.__speed = meaning 
+#         return self.__speed 
+    
+#     def show_speed(self): 
+#         return self.__speed 
+    
+# car1 = Car() 
+# print(car1.show_speed()) 
+# car1.set_speed(20) 
+# print(car1.show_speed())
+
+# class Car:
+#     __speed = 0
+#     @property
+#     def speed(self):
+#             return self.__speed
+
+#     @speed.setter
+#     def speed(self, new):
+#             self.__speed = new
+#             return self.__speed 
+            
+# car1 = Car()
+# print(car1.speed)
+# car1.speed = 20
+# print(car1.speed)
+
+# list1 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25] 
+
+# list_ = [x ** 2 for x in list1]
+# print(list_ )
+
+# str_list = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10']
+
+# int_list = [int(x) for x in str_list]
+# print(int_list)
+
+# list_ = [x ** 2 if x % 2 == 0 else x for x in range(1, 11)]
+
+# print(list_)
+
+# list_ = [x == False if x % 2 != 0 else True for x in range(1, 11)]
+# print(list_)
+
+# list_name = ['paul', 'john', 'george', 'ringo', 'eric', 'patty', 'yoko', 'cynthia', 'linda', 'jude' ] 
+# new_list = ['shorter' if len(x) <= 4 else 'longer' for x in list_name]
+# print(new_list)
+
+# n = int(input('Chislo 1/ 10: '))
+# dict_ = {x: x**2 for x in range(1, 501) if x % n == 0}
+# print(dict_)
+
+# class Auto():
+#     def ride(self):
+#         print('Riding on a ground.')
+
+# class Boat():
+#     def swim(self):
+#         print('Floating on water')
+
+# class Amphibian(Auto, Boat):
+#     pass
+
+# obj = Amphibian() 
+# obj.ride() 
+# obj.swim() 
+
+class RadioMixin: 
+    def play_music(self): 
+        class_ = 'Space Invaders' 
+        print(f'Песня называется {class_}') 
+        
+class Auto: 
+    pass 
+        
+class Boat(RadioMixin): 
+    pass 
+
+class Amphibian(Auto, Boat): 
+    pass 
+
+auto = Auto() 
+boat = Boat() 
+obj = Amphibian() 
+obj.play_music()

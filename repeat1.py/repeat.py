@@ -44,31 +44,41 @@
 #     print(False)
 
 # ----------------------------------------------------------------------------------
-# import random 
+import random 
 
-# ls = ['Plov', 'Besh-Barmak', 'Kurdak', 'Oromo', 'Lagman']
-# p = 0 
-# b = 0
-# k = 0
-# o = 0
-# l = 0
+ls = ['Plov', 'Besh-Barmak', 'Kuurdak', 'Oromo', 'Lagman']
+p = 0
+b = 0
+k = 0
+o = 0
+l = 0
 
-# for x in range(0, 1_000):
-#     meal = random.choice(ls)
-    
-#     if meal.lower() == 'Besh-barmak':
-#         p += 1
-#     elif meal.lower() == 'Kuurdak':
-#         b += 1
-#     elif meal.lower() == 'Oromo':
-#         k += 1
-#     elif meal.lower() == 'Plov':
-#         o += 1
-#     else:
-#         l +=1
+for x in range(0, 1_000_000):
+    meal = random.choice(ls)
+#    print(meal)
+    if meal.lower() == 'plov':
+        p += 1
+    elif meal.lower() == 'besh-barmak':
+        b += 1
+    elif meal.lower() == 'kuurdak':
+        k += 1
+    elif meal.lower() == 'oromo':
+        o += 1
+    else:
+        l += 1
 
-# print('Результат: ')
-# print(f'')
+
+print('Результаты голодных игр:')
+# print(f'Plov {p}\nBesh-Barmak {b}\nKuurdak {k}\nOromo {o}\nLagman {l}')
+
+dict_={'Plov': p, 'Besh-barmak': b, 'Kuurdak': k, 'Oromo': o, 'Lagman': l}
+# print(dict_)
+res = sorted(dict_.items(), key=lambda x: x[1], reverse = True)[0]
+print(f'Победило блюдо {res[0]} и оно набрало {res[1]} очков!')
+
+
+
+#-----------------------------
 
 # Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target.
 
